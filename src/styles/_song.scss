@@ -1,0 +1,39 @@
+.song-container{
+     min-height: 60vh;
+     display: flex; // show in the same line
+     flex-direction: column; // make the show according to the columns
+     align-items: center;
+     justify-content: center;
+     img{
+          width: 20%;
+          border-radius: 50%;
+     }
+     h2 {
+          padding: 3rem 1rem 1rem 1rem; // top, right, bottom, left
+     }
+     h3{
+          font-size: 1rem;
+     }
+}
+
+.rotate{
+     animation: rotation 7s infinite linear;
+}
+
+
+@keyframes rotation {
+     from{
+          transform: rotate(0deg);
+     }
+     to{
+          transform: rotate(359deg);
+     }
+}
+
+@media screen and (max-width: 768px){
+     .song-container{
+          img{
+               width: 60%;
+          }
+     }
+}
